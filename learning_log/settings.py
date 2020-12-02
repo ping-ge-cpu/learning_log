@@ -30,6 +30,10 @@ ALLOWED_HOSTS = ['*']
 #我的设置
 LOGIN_URL = 'users:login'
 
+#Heroku
+import django_heroku
+django_heroku.settings(locals())
+
 # Application definition
 
 INSTALLED_APPS = [
